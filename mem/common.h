@@ -29,8 +29,8 @@ extern void *rpm_block;
 
 #include "meminfo.h"
 
-#if !defined(F_MALLOC) && !defined(Q_MALLOC) && !defined(HP_MALLOC)
-#error "no memory allocator selected"
+
+
 /* if exactly an allocator was selected, let's inline it! */
 #elif ((!defined Q_MALLOC && !defined HP_MALLOC) || \
 	 (!defined F_MALLOC && !defined HP_MALLOC) || \
